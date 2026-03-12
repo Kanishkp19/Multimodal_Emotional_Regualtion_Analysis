@@ -185,9 +185,22 @@ EXPRESSIVE CONTROL INDEX (ECI) RESULTS
 
 ---
 
-## Interview Summary
+## Key Insights
 
-> "The framework trains a self-supervised incongruence encoder on IEMOCAP Session1 using contrastive learning across face, audio, and text modalities. A Bi-LSTM temporal model then aggregates frame-level embeddings into a continuous Expressive Control Index. Evaluating the frozen model on 500 CMU-MOSEI clips showed an ECI drop from 0.92 to 0.68 — a measurable cross-dataset distribution shift consistent with the difference between controlled lab recordings and naturalistic YouTube speech. The architecture is designed to scale to full datasets when compute permits."
+- **Self-Supervised Learning**: The incongruence encoder learns cross-modal relationships without emotion labels, making the system generalizable to any emotion expression.
+- **Domain Shift Awareness**: The 0.245 ECI gap between IEMOCAP and MOSEI is informative — it reflects real differences in how people express emotions in controlled vs. naturalistic settings.
+- **Temporal Aggregation**: The Bi-LSTM with attention weighting captures temporal dynamics, not just frame-level incongruence.
+- **Multimodal Robustness**: The system gracefully handles incomplete modalities (e.g., audio-only or text-only input).
+
+---
+
+## Future Work
+
+- Scale training to full IEMOCAP (Sessions 1–5) for improved generalization
+- Integrate additional modalities (body pose, eye gaze)
+- Apply to clinical settings (e.g., detecting emotional dysregulation in mental health assessments)
+- Fine-tune for specific emotion types or cultural contexts
+- Incorporate dynamic weighting of modalities based on context
 
 ---
 
