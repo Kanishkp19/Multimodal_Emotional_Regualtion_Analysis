@@ -1,0 +1,82 @@
+# Video files
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.flv
+*.wmv
+*.webm
+*.m4v
+*.mpg
+*.mpeg
+*.3gp
+*.ogv
+*.ts
+*.m2ts
+*.mts
+*.vob
+*.f4v
+
+# Audio files
+*.wav
+*.mp3
+*.aac
+*.flac
+*.ogg
+*.m4a
+*.wma
+*.aiff
+*.alac
+*.opus
+*.ac3
+*.aab
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+
+# Checkpoints (keeping model checkpoints)
+# Uncomment if you want to ignore checkpoints too
+# checkpoints/
